@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional Ampliado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Test Vocacional Ampliado</h1>
+
+<form id="vocationalTest">
+    <!-- Preguntas -->
+    <div class="question">
+        <label>1. ¿Qué actividad prefieres en tu tiempo libre?</label><br>
+        <input type="radio" name="q1" value="1"> Leer libros o artículos<br>
+        <input type="radio" name="q1" value="2"> Hacer deporte o ejercicio<br>
+        <input type="radio" name="q1" value="3"> Realizar proyectos de arte<br>
+        <input type="radio" name="q1" value="4"> Jugar videojuegos o aprender sobre tecnología
+    </div>
+
+    <div class="question">
+        <label>2. ¿Cómo te describes en un grupo?</label><br>
+        <input type="radio" name="q2" value="1"> Soy un líder natural<br>
+        <input type="radio" name="q2" value="2"> Prefiero colaborar y ayudar<br>
+        <input type="radio" name="q2" value="3"> Me gusta observar y escuchar<br>
+        <input type="radio" name="q2" value="4"> Prefiero innovar y proponer ideas
+    </div>
+
+    <div class="question">
+        <label>3. ¿Cuál de estas materias disfrutas más?</label><br>
+        <input type="radio" name="q3" value="1"> Literatura o idiomas<br>
+        <input type="radio" name="q3" value="2"> Matemáticas o física<br>
+        <input type="radio" name="q3" value="3"> Ciencias biológicas o química<br>
+        <input type="radio" name="q3" value="4"> Artes plásticas o música
+    </div>
+
+    <div class="question">
+        <label>4. ¿Qué tipo de problemas te gusta resolver?</label><br>
+        <input type="radio" name="q4" value="1"> Problemas sociales o comunitarios<br>
+        <input type="radio" name="q4" value="2"> Problemas técnicos o mecánicos<br>
+        <input type="radio" name="q4" value="3"> Problemas creativos o artísticos<br>
+        <input type="radio" name="q4" value="4"> Problemas numéricos o lógicos
+    </div>
+
+    <div class="question">
+        <label>5. ¿Prefieres trabajar en equipo o solo?</label><br>
+        <input type="radio" name="q5" value="1"> En equipo<br>
+        <input type="radio" name="q5" value="2"> Solo<br>
+        <input type="radio" name="q5" value="3"> Depende de la tarea<br>
+        <input type="radio" name="q5" value="4"> Me gusta variar según el proyecto
+    </div>
+
+    <div class="question">
+        <label>6. ¿Qué tipo de entorno laboral prefieres?</label><br>
+        <input type="radio" name="q6" value="1"> Creativo y dinámico<br>
+        <input type="radio" name="q6" value="2"> Estructurado y organizado<br>
+        <input type="radio" name="q6" value="3"> Técnico y científico<br>
+        <input type="radio" name="q6" value="4"> Social y colaborativo
+    </div>
+
+    <div class="question">
+        <label>7. ¿Qué valoras más en un trabajo?</label><br>
+        <input type="radio" name="q7" value="1"> Reconocimiento y éxito<br>
+        <input type="radio" name="q7" value="2"> Estabilidad y seguridad<br>
+        <input type="radio" name="q7" value="3"> Creatividad y expresión personal<br>
+        <input type="radio" name="q7" value="4"> Impacto social y ayudar a otros
+    </div>
+
+    <div class="question">
+        <label>8. ¿Cómo te sientes al trabajar bajo presión?</label><br>
+        <input type="radio" name="q8" value="1"> Me motiva a dar lo mejor de mí<br>
+        <input type="radio" name="q8" value="2"> Prefiero evitarlo, me estresa<br>
+        <input type="radio" name="q8" value="3"> Puedo adaptarme si es necesario<br>
+        <input type="radio" name="q8" value="4"> Depende de la situación
+    </div>
+
+    <div class="question">
+        <label>9. ¿Cuál de las siguientes áreas te atrae más?</label><br>
+        <input type="radio" name="q9" value="1"> Ciencias Sociales (Psicología, Sociología, Trabajo Social)<br>
+        <input type="radio" name="q9" value="2"> Ciencias Exactas (Matemáticas, Física, Química)<br>
+        <input type="radio" name="q9" value="3"> Ciencias de la Salud (Medicina, Enfermería, Odontología)<br>
+        <input type="radio" name="q9" value="4"> Artes y Humanidades (Literatura, Bellas Artes, Música)<br>
+        <input type="radio" name="q9" value="5"> Ingeniería (Civil, Electrónica, Sistemas)<br>
+        <input type="radio" name="q9" value="6"> Educación (Pedagogía, Educación Física)<br>
+        <input type="radio" name="q9" value="7"> Agricultura (Ingeniería Agronómica, Zootecnia)
+    </div>
+
+    <div class="question">
+        <label>10. ¿Qué tipo de proyectos prefieres realizar?</label><br>
+        <input type="radio" name="q10" value="1"> Proyectos de investigación<br>
+        <input type="radio" name="q10" value="2"> Proyectos de diseño<br>
+        <input type="radio" name="q10" value="3"> Proyectos de desarrollo tecnológico<br>
+        <input type="radio" name="q10" value="4"> Proyectos de intervención social
+    </div>
+
+    <button type="button" onclick="calculateResult()">Enviar</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    function calculateResult() {
+        const form = document.forms['vocationalTest'];
+        let score = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            const question = form['q' + i];
+            if (question.value) {
+                score += parseInt(question.value);
+            }
+        }
+
+        let recommendation;
+        if (score <= 10) {
+            recommendation = "Te recomendamos explorar carreras en Humanidades, como Psicología, Trabajo Social, o Educación.";
+        } else if (score <= 20) {
+            recommendation = "Considera carreras en Ciencias Sociales o Artes, como Comunicación, Antropología o Bellas Artes.";
+        } else if (score <= 30) {
+            recommendation = "Las carreras en Ciencias Naturales o Tecnologías pueden ser adecuadas para ti, como Biología, Química o Ingeniería.";
+        } else if (score <= 40) {
+            recommendation = "Explora carreras en Ingeniería o Ciencias Aplicadas, como Ingeniería de Sistemas, Electrónica o Arquitectura.";
+        } else {
+            recommendation = "Las carreras en Negocios, Finanzas o Liderazgo pueden ser muy interesantes para ti, como Administración de Empresas o Mercadeo.";
+        }
+
+        document.getElementById('result').innerText = recommendation;
+    }
+</script>
+
+</body>
+</html>
